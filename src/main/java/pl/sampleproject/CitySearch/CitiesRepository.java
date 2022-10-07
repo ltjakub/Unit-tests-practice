@@ -1,4 +1,4 @@
-package pl.sampleproject;
+package pl.sampleproject.CitySearch;
 
 import java.util.Arrays;
 import java.util.List;

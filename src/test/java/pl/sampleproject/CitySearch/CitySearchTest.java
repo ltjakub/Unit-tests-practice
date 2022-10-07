@@ -1,4 +1,4 @@
-package pl.sampleproject;
+package pl.sampleproject.CitySearch;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,12 +6,17 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import pl.sampleproject.CitySearch.CitiesRepository;
+import pl.sampleproject.CitySearch.CitySearch;
+
 import java.util.List;
 import static org.mockito.Mockito.when;
 
 class CitySearchTest {
-    @Mock CitiesRepository citiesRepository;
-    @InjectMocks CitySearch citySearch;
+    @Mock
+    CitiesRepository citiesRepository;
+    @InjectMocks
+    CitySearch citySearch;
     @BeforeEach
             public void init() {
         MockitoAnnotations.openMocks(this);
